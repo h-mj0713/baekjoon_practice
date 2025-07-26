@@ -20,7 +20,7 @@ so I implemented it manually using a factorial function.
 The problem itself was simple,  
 but it was a meaningful experience to recognize a real-world scenario where combinations apply and to actually implement it from scratch.
 
-```python
+```python(first)
 def factorial(n):
     result = 1
     for i in range(2,n+1):
@@ -34,3 +34,14 @@ T = int(input())
 for i in range(T):
     N, M = map(int,input().split())
     print(combination(M, N))
+
+
+# Alternative: using math.comb (Python 3.8+)
+# This version is more concise and doesn't require a manual factorial function.
+
+import math
+
+T = int(input())
+for _ in range(T):
+    N, M = map(int, input().split())
+    print(math.comb(M, N))
