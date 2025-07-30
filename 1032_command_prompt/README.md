@@ -1,4 +1,4 @@
-```
+```markdown
 # BOJ 1032 - Command Prompt
 
 ## Problem
