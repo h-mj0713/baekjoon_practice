@@ -52,11 +52,15 @@ num = int(input())
 f = int(input())
 
 new_num = (num // 100) * 100
+change = 0
 
-for i in range(100):
-    if (new_num + i) % f == 0:
-        print(f"{i:02d}")
+while True:
+    if new_num % f == 0:
+        print(f"{change:02d}")
         break
+    new_num += 1
+    change += 1
+    
 ```
 
 ---
